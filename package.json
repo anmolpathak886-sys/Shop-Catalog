@@ -1,0 +1,15 @@
+{
+  "name": "shop-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["Client", "Server"],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c green,blue \"npm run dev --workspace=Server\" \"npm run dev --workspace=Client\"",
+    "build": "npm run build --workspace=Client",
+    "start": "npm run start --workspace=Server",
+    "seed": "npm run seed --workspace=Server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
