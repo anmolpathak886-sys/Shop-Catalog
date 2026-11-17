@@ -1,10 +1,6 @@
-node_modules/
-dist/
+node_modules
 .env
 .env.*
 !.env.example
-npm-debug.log*
-
-# Unrelated project documents in this folder; do not publish with Shop Catalog.
-/COLLEX_Mini_Project_Synopsis.docx
-/COLLEX_Mini_Project_Synopsis.pdf
+Client/dist
+.DS_Store

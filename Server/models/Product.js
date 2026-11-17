@@ -13,10 +13,10 @@ const productSchema = new mongoose.Schema(
       required: true,
       index: true,
     },
+    created_by: { type: mongoose.Schema.Types.ObjectId, ref: "User", index: true },
   },
   { timestamps: { createdAt: "created_at", updatedAt: "updated_at" } }
 );
 
 productSchema.index({ name: "text", description: "text" });
-
 module.exports = mongoose.model("Product", productSchema);

@@ -7,7 +7,8 @@
     "dev": "concurrently -k -n api,web -c green,blue \"npm run dev --workspace=Server\" \"npm run dev --workspace=Client\"",
     "build": "npm run build --workspace=Client",
     "start": "npm run start --workspace=Server",
-    "seed": "npm run seed --workspace=Server"
+    "seed": "npm run seed --workspace=Server",
+    "create-admin": "npm run create-admin --workspace=Server"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
